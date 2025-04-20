@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <img src="public/logo.png" alt="Human OS Logo" width="150" />
-  <h2>Login</h2>
-  <form id="loginForm">
-    <input type="email" name="email" placeholder="Email" required />
-    <input type="password" name="password" placeholder="Password" required />
-    <button type="submit">Log In</button>
-  </form>
-
-  <script type="module" src="./src/login.js"></script>
-</body>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <img src="./public/logo.png" alt="Human OS Logo" width="120" />
+    <h1>Log In to Human OS</h1>
+    <form id="login-form">
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Log In</button>
+    </form>
+    <p>Don’t have an account? <a href="./signup.html">Sign up here</a>.</p>
+    <div id="login"></div>
+    <script type="module" src="./src/login.js"></script>
+  </body>
 </html>
