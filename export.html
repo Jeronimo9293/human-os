@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Export Journal</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <img src="public/logo.png" alt="Human OS Logo" width="150" />
-  <h2>Export Your Journal</h2>
-  <textarea id="journalEntry" placeholder="Write your thoughts here..." rows="10" cols="50"></textarea>
-  <br />
-  <button id="exportBtn">Download .txt</button>
-
-  <script type="module" src="./src/export.js"></script>
-</body>
+<html>
+  <head>
+    <title>Export</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <img src="./public/logo.png" alt="Human OS Logo" width="120" />
+    <h1>Export Your Data</h1>
+    <p>You can export your journal entries here.</p>
+    <button id="export-btn">Export Entries</button>
+    <div id="export"></div>
+    <script type="module" src="./src/export.js"></script>
+  </body>
 </html>
